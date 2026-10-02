@@ -75,3 +75,27 @@ footer a {
 .chef-site {
   font-feature-settings: "liga" 1, "kern" 1;
 }
+
+.parallax-motion {
+  transform: translate3d(0, var(--parallax-y, 0), 0);
+  will-change: transform;
+}
+
+.watermark-title::before {
+  display: block;
+  color: rgb(12 10 9 / 0.15);
+  content: "Zachary\A Brazier";
+  font-size: clamp(5rem, 18vw, 16rem);
+  font-weight: 600;
+  letter-spacing: -0.1em;
+  line-height: 0.85;
+  text-align: left;
+  white-space: pre-line;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parallax-motion {
+    transform: none;
+    will-change: auto;
+  }
+}

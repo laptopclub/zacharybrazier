@@ -3,6 +3,7 @@ import { BlockRenderer, type PageBlock } from "@laptopclub/foundation-ui";
 import type { Metadata } from "next";
 import Image from "next/image";
 import type { PageBySlugQueryResult } from "../lib/sanity-query-types";
+import { ParallaxController } from "../components/parallax-controller";
 import { siteBlockRegistry } from "../lib/blocks";
 import { env } from "../lib/env";
 import { sanityFetch } from "../lib/live";
@@ -56,30 +57,39 @@ export async function generateMetadata(): Promise<Metadata> {
 function BespokeHome() {
   return (
     <div className="chef-site bg-white text-stone-950">
+      <ParallaxController />
       <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
         <div className="absolute left-[-18vw] top-[18vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:left-[10vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
-          <Image
-            alt="Zachary Brazier in chef whites"
-            className="size-full object-contain"
-            fill
-            priority
-            sizes="(min-width: 768px) 18vw, 48vw"
-            src="/images/zacharychef3.png"
-          />
+          <div className="parallax-motion relative size-full" data-parallax-speed="0.08">
+            <Image
+              alt="Zachary Brazier in chef whites"
+              className="size-full object-contain"
+              fill
+              priority
+              sizes="(min-width: 768px) 18vw, 48vw"
+              src="/images/zacharychef3.png"
+            />
+          </div>
         </div>
-        <div className="absolute left-1/2 top-1/2 z-10 aspect-[1122/1402] w-[78vw] max-w-[34rem] -translate-x-1/2 -translate-y-1/2 md:w-[42vw] md:max-w-[42rem]">
-          <Image
-            alt="Zachary Brazier standing in chef whites"
-            className="size-full object-contain"
-            fill
-            priority
-            sizes="(min-width: 768px) 42vw, 78vw"
-            src="/images/zacharychef2.png"
-          />
+        <div className="absolute left-1/2 top-1/2 z-10 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
+          <div className="parallax-motion relative size-full" data-parallax-speed="0.14">
+            <Image
+              alt="Zachary Brazier standing in chef whites"
+              className="size-full object-contain"
+              fill
+              priority
+              sizes="(min-width: 768px) 29vw, 55vw"
+              src="/images/zacharychef2.png"
+            />
+          </div>
         </div>
-        <h1 className="pointer-events-none absolute left-1/2 top-1/2 z-20 w-[110vw] -translate-x-1/2 -translate-y-1/2 text-center text-[clamp(5rem,18vw,16rem)] font-semibold leading-[0.85] tracking-[-0.1em] text-stone-950/15">
-          Zachary Brazier
-        </h1>
+        <h1 className="sr-only">Zachary Brazier</h1>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-6 top-1/2 z-20 w-[95vw] -translate-y-1/2 md:left-10 lg:left-16"
+        >
+          <div className="watermark-title parallax-motion" data-parallax-speed="-0.06" />
+        </div>
         <div className="relative z-30 mx-auto flex w-full max-w-7xl justify-end">
           <p className="max-w-xl text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
             Considered food for private tables, collaborations and thoughtful hospitality projects.
@@ -90,7 +100,7 @@ function BespokeHome() {
       <section id="about" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.55fr_1fr]">
           <div>
-            <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Seasonal, precise, generous.</h2>
+            <h2 className="parallax-motion mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl" data-parallax-speed="0.05">Seasonal, precise, generous.</h2>
           </div>
           <div className="grid gap-8 text-lg leading-8 text-stone-600 md:grid-cols-2">
             <p>
@@ -109,7 +119,7 @@ function BespokeHome() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-6 lg:grid-cols-[0.8fr_0.6fr] lg:items-end lg:justify-between">
             <div>
-              <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Plates, produce and process.</h2>
+              <h2 className="parallax-motion mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl" data-parallax-speed="0.05">Plates, produce and process.</h2>
             </div>
             <p className="max-w-lg text-lg leading-8 text-stone-600">
               A simple gallery area for now, ready for Zachary’s own food photography when final assets are available.
@@ -117,7 +127,7 @@ function BespokeHome() {
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {cookingImages.map((image, index) => (
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-100" key={image.src}>
+              <div className="parallax-motion relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-100" data-parallax-speed={index === 1 ? "0.1" : "0.07"} key={image.src}>
                 <Image
                   alt={image.alt}
                   className="size-full object-cover"
@@ -135,7 +145,7 @@ function BespokeHome() {
       <section id="experience" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.65fr_1fr] lg:items-start">
           <div>
-            <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Calm, capable cooking for the room.</h2>
+            <h2 className="parallax-motion mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl" data-parallax-speed="0.05">Calm, capable cooking for the room.</h2>
           </div>
           <div className="divide-y divide-stone-200">
             {experienceItems.map((item) => (
@@ -150,7 +160,7 @@ function BespokeHome() {
       <section id="contact" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-stone-50 p-8 md:p-12 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:p-16">
           <div>
-            <h2 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-stone-950 md:text-7xl">
+            <h2 className="parallax-motion mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-stone-950 md:text-7xl" data-parallax-speed="0.05">
               Let’s cook something memorable.
             </h2>
           </div>
