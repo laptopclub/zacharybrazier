@@ -56,26 +56,34 @@ export async function generateMetadata(): Promise<Metadata> {
 function BespokeHome() {
   return (
     <div className="chef-site bg-white text-stone-950">
-      <section className="flex min-h-screen items-center px-6 py-20 md:px-10 lg:px-16">
-        <div className="mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-          <div>
-            <h1 className="max-w-5xl text-[clamp(4.5rem,13vw,12rem)] font-semibold leading-[0.85] tracking-[-0.09em] text-stone-950">
-              Zachary Brazier
-            </h1>
-          </div>
-          <div className="max-w-xl pt-8 lg:pl-10 lg:pt-0">
-            <p className="text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
-              Considered food for private tables, collaborations and thoughtful hospitality projects.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                className="inline-flex rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-stone-800 transition hover:border-stone-950"
-                href="#about"
-              >
-                Explore
-              </a>
-            </div>
-          </div>
+      <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
+        <div className="absolute left-[-18vw] top-[18vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:left-[10vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
+          <Image
+            alt="Zachary Brazier in chef whites"
+            className="size-full object-contain"
+            fill
+            priority
+            sizes="(min-width: 768px) 18vw, 48vw"
+            src="/images/zacharychef3.png"
+          />
+        </div>
+        <div className="absolute left-1/2 top-1/2 z-10 aspect-[1122/1402] w-[78vw] max-w-[34rem] -translate-x-1/2 -translate-y-1/2 md:w-[42vw] md:max-w-[42rem]">
+          <Image
+            alt="Zachary Brazier standing in chef whites"
+            className="size-full object-contain"
+            fill
+            priority
+            sizes="(min-width: 768px) 42vw, 78vw"
+            src="/images/zacharychef2.png"
+          />
+        </div>
+        <h1 className="pointer-events-none absolute left-1/2 top-1/2 z-20 w-[110vw] -translate-x-1/2 -translate-y-1/2 text-center text-[clamp(5rem,18vw,16rem)] font-semibold leading-[0.85] tracking-[-0.1em] text-stone-950/15">
+          Zachary Brazier
+        </h1>
+        <div className="relative z-30 mx-auto flex w-full max-w-7xl justify-end">
+          <p className="max-w-xl text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
+            Considered food for private tables, collaborations and thoughtful hospitality projects.
+          </p>
         </div>
       </section>
 
