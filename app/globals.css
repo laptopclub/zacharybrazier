@@ -28,7 +28,7 @@ body::after {
   position: fixed;
   inset-inline: 0;
   bottom: 0;
-  z-index: 50;
+  z-index: 40 !important;
   height: 5rem;
   background: transparent;
   backdrop-filter: blur(18px);
@@ -46,7 +46,7 @@ header {
   position: fixed !important;
   inset-inline: 0;
   top: 0;
-  z-index: 50;
+  z-index: 40 !important;
   height: 5rem;
   overflow: hidden;
   border: 0 !important;
@@ -61,7 +61,7 @@ header * {
 
 footer {
   position: relative;
-  z-index: 60;
+  z-index: 60 !important;
   background: #11100d !important;
   color: #f8efe0 !important;
 }

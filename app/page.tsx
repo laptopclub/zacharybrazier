@@ -64,17 +64,11 @@ function BespokeHome() {
               Zachary Brazier
             </h1>
           </div>
-          <div className="max-w-xl border-t border-stone-200 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+          <div className="max-w-xl pt-8 lg:pl-10 lg:pt-0">
             <p className="text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
               Considered food for private tables, collaborations and thoughtful hospitality projects.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                className="inline-flex rounded-full bg-stone-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-700"
-                href="mailto:hello@zacharybrazier.com"
-              >
-                Enquire now
-              </a>
               <a
                 className="inline-flex rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-stone-800 transition hover:border-stone-950"
                 href="#about"
@@ -86,7 +80,7 @@ function BespokeHome() {
         </div>
       </section>
 
-      <section id="about" className="border-t border-stone-200 px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+      <section id="about" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.55fr_1fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">About me</p>
@@ -105,7 +99,7 @@ function BespokeHome() {
         </div>
       </section>
 
-      <section id="cooking" className="border-t border-stone-200 px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+      <section id="cooking" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-6 lg:grid-cols-[0.8fr_0.6fr] lg:items-end lg:justify-between">
             <div>
@@ -133,13 +127,13 @@ function BespokeHome() {
         </div>
       </section>
 
-      <section id="experience" className="border-t border-stone-200 px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+      <section id="experience" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.65fr_1fr] lg:items-start">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">Experience</p>
             <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Calm, capable cooking for the room.</h2>
           </div>
-          <div className="divide-y divide-stone-200 border-y border-stone-200">
+          <div className="divide-y divide-stone-200">
             {experienceItems.map((item) => (
               <p className="py-6 text-2xl leading-8 tracking-[-0.03em] text-stone-800" key={item}>
                 {item}
@@ -149,7 +143,7 @@ function BespokeHome() {
         </div>
       </section>
 
-      <section id="contact" className="border-t border-stone-200 px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+      <section id="contact" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-stone-50 p-8 md:p-12 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:p-16">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">Contact</p>
@@ -159,13 +153,10 @@ function BespokeHome() {
           </div>
           <div>
             <p className="text-lg leading-8 text-stone-600">
-              Share the date, guest count and style of meal you have in mind. Zachary will respond with availability and
-              a simple proposal.
+              Share the date, guest count and style of meal you have in mind. Social links and booking details will be
+              added once Zachary’s preferred contact channels are ready.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a className="rounded-full bg-stone-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-stone-700" href="mailto:hello@zacharybrazier.com">
-                Email Zachary
-              </a>
               <a className="rounded-full border border-stone-300 px-6 py-3 text-sm font-medium text-stone-800 transition hover:border-stone-950" href="https://instagram.com" rel="noreferrer" target="_blank">
                 Instagram
               </a>

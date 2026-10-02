@@ -30,11 +30,9 @@ type ExtendedSiteSettingsQueryResult = SiteSettingsQueryResult & {
 export const fallbackSiteSettings: SiteSettings = {
   copyrightStartYear: 2026,
   description: "Seasonal chef portfolio for private dining, collaborations and modern British food.",
-  footerContact: {
-    email: "hello@zacharybrazier.com"
-  },
+  footerContact: undefined,
   footerMenus: [],
-  footerNavigation: [{ href: "mailto:hello@zacharybrazier.com", label: "Email Zachary" }],
+  footerNavigation: [],
   footerTagline: "Seasonal cooking, private dining and thoughtful hospitality.",
   logoText: env.siteName,
   primaryNavigation: [
