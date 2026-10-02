@@ -60,6 +60,8 @@ header * {
 }
 
 footer {
+  position: relative;
+  z-index: 60;
   background: #11100d !important;
   color: #f8efe0 !important;
 }
@@ -67,7 +69,7 @@ footer {
 footer h2,
 footer p,
 footer a {
-  color: inherit !important;
+  color: #f8efe0 !important;
 }
 
 .chef-site {

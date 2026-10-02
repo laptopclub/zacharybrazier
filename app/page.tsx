@@ -55,7 +55,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function BespokeHome() {
   return (
-    <main className="chef-site bg-white text-stone-950">
+    <div className="chef-site bg-white text-stone-950">
       <section className="flex min-h-screen items-center px-6 py-20 md:px-10 lg:px-16">
         <div className="mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>
@@ -176,7 +176,7 @@ function BespokeHome() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
