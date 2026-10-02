@@ -59,7 +59,6 @@ function BespokeHome() {
       <section className="flex min-h-screen items-center px-6 py-20 md:px-10 lg:px-16">
         <div className="mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>
-            <p className="mb-8 text-xs font-semibold uppercase tracking-[0.45em] text-stone-500">Private chef / seasonal cooking</p>
             <h1 className="max-w-5xl text-[clamp(4.5rem,13vw,12rem)] font-semibold leading-[0.85] tracking-[-0.09em] text-stone-950">
               Zachary Brazier
             </h1>
@@ -83,7 +82,6 @@ function BespokeHome() {
       <section id="about" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.55fr_1fr]">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">About me</p>
             <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Seasonal, precise, generous.</h2>
           </div>
           <div className="grid gap-8 text-lg leading-8 text-stone-600 md:grid-cols-2">
@@ -103,7 +101,6 @@ function BespokeHome() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-12 grid gap-6 lg:grid-cols-[0.8fr_0.6fr] lg:items-end lg:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">My cooking</p>
               <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Plates, produce and process.</h2>
             </div>
             <p className="max-w-lg text-lg leading-8 text-stone-600">
@@ -130,7 +127,6 @@ function BespokeHome() {
       <section id="experience" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.65fr_1fr] lg:items-start">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">Experience</p>
             <h2 className="mt-5 text-4xl font-semibold tracking-[-0.05em] text-stone-950 md:text-6xl">Calm, capable cooking for the room.</h2>
           </div>
           <div className="divide-y divide-stone-200">
@@ -146,7 +142,6 @@ function BespokeHome() {
       <section id="contact" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-stone-50 p-8 md:p-12 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:p-16">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-stone-500">Contact</p>
             <h2 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-stone-950 md:text-7xl">
               Let’s cook something memorable.
             </h2>
