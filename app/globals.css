@@ -83,11 +83,11 @@ footer a {
 
 .watermark-title::before {
   display: block;
-  color: rgb(12 10 9);
+  color: rgb(168 162 158);
   content: "Zachary\A Brazier";
   font-size: clamp(5rem, 18vw, 16rem);
   font-weight: 600;
-  letter-spacing: -0.1em;
+  letter-spacing: -0.085em;
   line-height: 0.85;
   text-align: left;
   white-space: pre-line;
