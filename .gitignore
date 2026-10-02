@@ -1,0 +1,14 @@
+node_modules
+.next
+.vercel
+dist
+.turbo
+.sanity
+.env
+.env.*
+.env*
+!.env.example
+.DS_Store
+coverage
+test-results
+*.tsbuildinfo

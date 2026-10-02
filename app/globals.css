@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: Inter;
+  --color-brand-50: 255 247 235;
+  --color-brand-100: 238 205 164;
+  --color-brand-500: 215 165 105;
+  --color-brand-600: 157 95 49;
+  --color-brand-900: 33 24 17;
+  --color-surface-canvas: 248 239 224;
+  --color-surface-muted: 236 220 197;
+  --color-ink-base: 33 24 17;
+  --color-ink-muted: 111 87 71;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-stone-950 antialiased;
+}
+
+body::after {
+  pointer-events: none;
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 50;
+  height: 5rem;
+  background: transparent;
+  backdrop-filter: blur(18px);
+  content: "";
+  mask-image: linear-gradient(to top, black, transparent);
+}
+
+::selection {
+  background: rgb(var(--color-brand-500));
+  color: rgb(var(--color-brand-900));
+}
+
+header {
+  pointer-events: none;
+  position: fixed !important;
+  inset-inline: 0;
+  top: 0;
+  z-index: 50;
+  height: 5rem;
+  overflow: hidden;
+  border: 0 !important;
+  background: transparent !important;
+  backdrop-filter: blur(18px);
+  mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+header * {
+  visibility: hidden !important;
+}
+
+footer {
+  background: #11100d !important;
+  color: #f8efe0 !important;
+}
+
+footer h2,
+footer p,
+footer a {
+  color: inherit !important;
+}
+
+.chef-site {
+  font-feature-settings: "liga" 1, "kern" 1;
+}
