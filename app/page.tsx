@@ -59,7 +59,7 @@ function BespokeHome() {
     <div className="chef-site bg-white text-stone-950">
       <ParallaxController />
       <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
-        <div className="absolute left-[-18vw] top-[18vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:left-[10vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
+        <div className="absolute left-[22%] top-[16vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] -translate-x-1/2 md:left-[37%] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
           <div className="parallax-motion relative size-full" data-parallax-speed="0.06">
             <Image
               alt="Zachary Brazier in chef whites"
@@ -71,7 +71,7 @@ function BespokeHome() {
             />
           </div>
         </div>
-        <div className="absolute left-[32%] top-1/2 z-10 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
+        <div className="absolute left-1/2 top-1/2 z-20 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
           <div className="parallax-motion relative size-full" data-parallax-speed="0.18">
             <Image
               alt="Zachary Brazier standing in chef whites"
@@ -86,7 +86,7 @@ function BespokeHome() {
         <h1 className="sr-only">Zachary Brazier</h1>
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-6 top-1/2 z-20 w-[95vw] -translate-y-1/2 md:left-10 lg:left-16"
+          className="pointer-events-none absolute left-6 top-1/2 z-0 w-[95vw] -translate-y-1/2 md:left-10 lg:left-16"
         >
           <div className="watermark-title parallax-motion" data-parallax-speed="-0.06" />
         </div>
