@@ -60,7 +60,7 @@ function BespokeHome() {
       <ParallaxController />
       <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
         <div className="absolute left-[-18vw] top-[18vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:left-[10vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
-          <div className="parallax-motion relative size-full" data-parallax-speed="0.08">
+          <div className="parallax-motion relative size-full" data-parallax-speed="0.06">
             <Image
               alt="Zachary Brazier in chef whites"
               className="size-full object-contain"
@@ -71,8 +71,8 @@ function BespokeHome() {
             />
           </div>
         </div>
-        <div className="absolute left-1/2 top-1/2 z-10 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
-          <div className="parallax-motion relative size-full" data-parallax-speed="0.14">
+        <div className="absolute left-[32%] top-1/2 z-10 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
+          <div className="parallax-motion relative size-full" data-parallax-speed="0.18">
             <Image
               alt="Zachary Brazier standing in chef whites"
               className="size-full object-contain"
@@ -158,9 +158,9 @@ function BespokeHome() {
       </section>
 
       <section id="contact" className="px-6 py-20 md:px-10 lg:px-16 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-stone-50 p-8 md:p-12 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:p-16">
+        <div className="parallax-motion mx-auto grid max-w-7xl gap-10 rounded-[2rem] bg-stone-50 p-8 md:p-12 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:p-16" data-parallax-speed="0.05">
           <div>
-            <h2 className="parallax-motion mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-stone-950 md:text-7xl" data-parallax-speed="0.05">
+            <h2 className="mt-5 max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] text-stone-950 md:text-7xl">
               Let’s cook something memorable.
             </h2>
           </div>
