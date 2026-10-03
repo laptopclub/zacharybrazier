@@ -72,7 +72,7 @@ function BespokeHome() {
               />
             </div>
           </div>
-          <div className="absolute left-1/2 top-1/2 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
+          <div className="absolute left-1/2 top-1/2 aspect-[1122/1402] w-[55vw] max-w-[24rem] translate-x-[20%] -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
             <div className="parallax-motion relative size-full" data-parallax-speed="0.18">
               <Image
                 alt="Zachary Brazier standing in chef whites"
