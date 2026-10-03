@@ -59,7 +59,7 @@ function BespokeHome() {
     <div className="chef-site bg-white text-stone-950">
       <ParallaxController />
       <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
-        <div className="absolute left-[22%] top-[16vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] -translate-x-1/2 md:left-[37%] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
+        <div className="absolute right-[-12vw] top-[16vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:right-[13vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
           <div className="parallax-motion relative size-full" data-parallax-speed="0.06">
             <Image
               alt="Zachary Brazier in chef whites"
@@ -90,7 +90,7 @@ function BespokeHome() {
         >
           <div className="watermark-title parallax-motion" data-parallax-speed="-0.06" />
         </div>
-        <div className="relative z-30 mx-auto flex w-full max-w-7xl justify-end">
+        <div className="relative z-30 mx-auto flex w-full max-w-7xl justify-start">
           <p className="max-w-xl text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
             Considered food for private tables, collaborations and thoughtful hospitality projects.
           </p>
@@ -125,9 +125,9 @@ function BespokeHome() {
               A simple gallery area for now, ready for Zachary’s own food photography when final assets are available.
             </p>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="parallax-motion grid gap-4 md:grid-cols-3" data-parallax-speed="0.07">
             {cookingImages.map((image, index) => (
-              <div className="parallax-motion relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-100" data-parallax-speed={index === 1 ? "0.1" : "0.07"} key={image.src}>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-100" key={image.src}>
                 <Image
                   alt={image.alt}
                   className="size-full object-cover"
