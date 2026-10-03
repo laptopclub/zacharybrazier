@@ -58,40 +58,39 @@ function BespokeHome() {
   return (
     <div className="chef-site bg-white text-stone-950">
       <ParallaxController />
-      <section className="relative flex min-h-screen items-end overflow-hidden px-6 py-20 md:px-10 lg:px-16">
-        <div className="absolute right-[-12vw] top-[16vh] z-10 aspect-[1122/1402] w-[48vw] max-w-[17rem] md:right-[13vw] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
-          <div className="parallax-motion relative size-full" data-parallax-speed="0.06">
-            <Image
-              alt="Zachary Brazier in chef whites"
-              className="size-full object-contain"
-              fill
-              priority
-              sizes="(min-width: 768px) 18vw, 48vw"
-              src="/images/zacharychef3.png"
-            />
+      <section className="relative flex min-h-screen items-center overflow-hidden px-6 py-20 md:px-10 lg:px-16">
+        <div aria-hidden="true" className="absolute inset-0 z-10 mx-auto w-full max-w-7xl">
+          <div className="absolute right-0 top-[16vh] aspect-[1122/1402] w-[48vw] max-w-[17rem] md:top-[14vh] md:w-[18vw] md:max-w-[19rem]">
+            <div className="parallax-motion relative size-full" data-parallax-speed="0.06">
+              <Image
+                alt="Zachary Brazier in chef whites"
+                className="size-full object-contain"
+                fill
+                priority
+                sizes="(min-width: 768px) 18vw, 48vw"
+                src="/images/zacharychef3.png"
+              />
+            </div>
           </div>
-        </div>
-        <div className="absolute left-1/2 top-1/2 z-20 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
-          <div className="parallax-motion relative size-full" data-parallax-speed="0.18">
-            <Image
-              alt="Zachary Brazier standing in chef whites"
-              className="size-full object-contain"
-              fill
-              priority
-              sizes="(min-width: 768px) 29vw, 55vw"
-              src="/images/zacharychef2.png"
-            />
+          <div className="absolute left-1/2 top-1/2 aspect-[1122/1402] w-[55vw] max-w-[24rem] -translate-x-1/2 -translate-y-1/2 md:w-[29vw] md:max-w-[29rem]">
+            <div className="parallax-motion relative size-full" data-parallax-speed="0.18">
+              <Image
+                alt="Zachary Brazier standing in chef whites"
+                className="size-full object-contain"
+                fill
+                priority
+                sizes="(min-width: 768px) 29vw, 55vw"
+                src="/images/zacharychef2.png"
+              />
+            </div>
           </div>
         </div>
         <h1 className="sr-only">Zachary Brazier</h1>
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute left-6 top-1/2 z-0 w-[95vw] -translate-y-1/2 md:left-10 lg:left-16"
-        >
-          <div className="watermark-title parallax-motion" data-parallax-speed="-0.06" />
-        </div>
-        <div className="relative z-30 mx-auto flex w-full max-w-7xl justify-start">
-          <p className="max-w-xl text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
+        <div className="relative z-30 mx-auto w-full max-w-7xl">
+          <div aria-hidden="true" className="pointer-events-none">
+            <div className="watermark-title parallax-motion" data-parallax-speed="-0.06" />
+          </div>
+          <p className="mt-8 max-w-xl text-2xl leading-9 tracking-[-0.03em] text-stone-700 md:text-3xl">
             Considered food for private tables, collaborations and thoughtful hospitality projects.
           </p>
         </div>
