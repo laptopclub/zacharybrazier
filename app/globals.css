@@ -85,7 +85,7 @@ footer a {
   display: block;
   color: rgb(168 162 158);
   content: "Zachary\A Brazier";
-  font-size: clamp(5rem, 18vw, 16rem);
+  font-size: clamp(4.5rem, 16vw, 14.5rem);
   font-weight: 600;
   letter-spacing: -0.085em;
   line-height: 0.85;
