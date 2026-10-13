@@ -8,5 +8,5 @@ export const env = {
     studioUrl: process.env.NEXT_PUBLIC_SANITY_STUDIO_URL ?? "http://localhost:3333/studio"
   },
   siteName: process.env.NEXT_PUBLIC_SITE_NAME ?? "Zachary Brazier",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zacharybrazier.com"
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://zacharybrazier.co.uk"
 };

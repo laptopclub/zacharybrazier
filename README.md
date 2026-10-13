@@ -1,9 +1,9 @@
 # Zachary Brazier
 
-Chef portfolio site for zacharybrazier.com, built on the Laptop Club Foundation consumer stack.
+Chef portfolio site for zacharybrazier.co.uk, built on the Laptop Club Foundation consumer stack.
 
 - Framework: Next.js, Sanity, Tailwind and Foundation packages
-- Production URL: https://zacharybrazier.com
+- Production URL: https://zacharybrazier.co.uk
 - Local site: http://localhost:3334
 - Studio: http://localhost:3334/studio
 
